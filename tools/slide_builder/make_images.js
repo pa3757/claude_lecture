@@ -53,6 +53,7 @@ const tiles = {
   // deck 4: Claude Code examples
   t_assets: ['images', C.O], t_sales: ['chart-column-increasing', C.Y], t_proto: ['monitor-smartphone', C.G], t_deck: ['presentation', C.K],
   // deck 4: motion use cases
+  t_cloud: ['cloud', C.O], t_remote: ['smartphone', C.Y], t_sync: ['folder-sync', C.G], t_teleport: ['laptop', C.K],
   t_logo: ['wand-sparkles', C.O], t_sns: ['smartphone', C.Y], t_reel: ['film', C.G], t_data: ['chart-line', C.K],
 };
 
