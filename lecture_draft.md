@@ -204,6 +204,22 @@
 | **양식·예시 파일** | 실제 견적서 템플릿, 잘 된 예시 1~2개 |
 | **금지 사항** | "단가표에 없는 품목은 임의로 정하지 말 것" |
 
+### 2-8a ➕ 이미 만들어진 스킬 찾기 `[레이아웃: table 표]`
+| 어디서 | 주소 | 특징 |
+|---|---|---|
+| Claude 앱 기본 스킬 | Customize > Skills | Anthropic이 만든 엑셀·워드·PPT·PDF 스킬, 켜고 끄기 |
+| Anthropic 공식 스킬 모음 | github.com/anthropics/skills | 예제 스킬 모음. 내려받아 업로드·수정 |
+| Claude Code 플러그인 | `/plugin` 명령어 | 스킬·명령어 묶음을 마켓플레이스에서 설치 (`/plugin marketplace add anthropics/skills`) |
+| 커뮤니티 스킬 사이트 | skills.sh, skillsmp.com 등 | 비공식. 종류는 많지만 내용 확인 필수 |
+
+### 2-8b ➕ 가져온 스킬 설치하고 점검하기 `[레이아웃: 3-column card]`
+| 제목 | 설명 |
+|---|---|
+| **내용 먼저 읽기** | SKILL.md와 스크립트 확인. Claude에게 "이 스킬이 하는 일 설명해줘" |
+| **업로드** | 스킬 폴더를 ZIP으로 묶어 Customize > Skills > + > 스킬 만들기 > 업로드 |
+| **우리 회사에 맞게** | 양식·단가표·말투를 교체하고 테스트 후 공유 |
+- 하단 요약: 스킬에는 실행되는 스크립트가 들어 있을 수 있으니 출처가 분명한 스킬만 쓰기
+
 ### 2-9 ➕ 파일 만들기 – 엑셀·워드·PPT·PDF `[레이아웃: bignumber 숫자 강조]`
 | 표시 | 키워드 | 설명 |
 |---|---|---|
@@ -285,6 +301,22 @@
 | 난이도 | 쉬움 | 중간 |
 | 장점 | 바로 사용 | 내 컴퓨터 파일 작업과 결합, 공개된 MCP 서버를 자유롭게 추가 |
 | 추천 | 대부분의 업무 | 파일을 대량으로 다루는 자동화 |
+
+### 3-7a ➕ 새 커넥터, 무슨 일을 하는지 알아보기 `[레이아웃: steps 4단계]`
+1. **디렉터리 검색** – Customize > Connectors (claude.ai/customize/connectors)에서 카테고리·이름으로 검색
+2. **소개 확인** – 설명, 제공 도구 목록, Verified·Community 표시 (Verified는 보안 감사가 아님)
+3. **Claude에게 질문** – 연결 후 "이 커넥터로 할 수 있는 일을 알려줘", 대화창 도구 메뉴에서 도구별 권한 확인
+4. **작게 테스트** – 읽기 작업부터 해보고, 쓰기·발송은 확인 후 실행
+
+### 3-7b ➕ MCP·커넥터를 찾을 수 있는 곳 `[레이아웃: table 표]`
+| 어디서 | 주소 | 특징 |
+|---|---|---|
+| Claude 커넥터 디렉터리 | claude.ai/customize/connectors | 공식. Claude 앱·Code·Cowork 공통 목록 |
+| 공식 MCP Registry | registry.modelcontextprotocol.io | MCP 표준 공식 목록 (개발자용 정보) |
+| MCP 공식 GitHub | github.com/modelcontextprotocol | 참고용 서버와 문서 모음 |
+| Claude Code | `/mcp` 명령어 | 연결된 서버와 도구 목록 확인 |
+| 서비스 공식 문서 | 예) Notion·Figma 도움말 | 그 서비스가 MCP를 직접 제공하는지 |
+- 🎤 출처를 모르는 MCP 서버는 내 계정 권한으로 데이터를 읽고 쓸 수 있으니 피하기
 
 ### 3-8 간지 `[레이아웃: 타이틀 간지]`
 - 05 / **배운 걸 엮으면 자동화가 된다**

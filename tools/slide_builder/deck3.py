@@ -46,6 +46,22 @@ def build(d):
         ['**추천**  파일을 대량으로 다루는 자동화']],
         pills=('claude_app', 'claude_code'))
 
+    L.steps(d, '새 커넥터, 무슨 일을 하는지 알아보기', [
+        ('디렉터리 검색', ['Customize > Connectors', '카테고리·이름으로 검색']),
+        ('소개 확인', ['설명, 제공 도구 목록,', 'Verified·Community 표시']),
+        ('Claude에게 질문', ['"이 커넥터로 할 수 있는', '일을 알려줘"']),
+        ('작게 테스트', ['읽기 작업부터 해보고', '쓰기·발송은 확인 후'])], header=H,
+        notes='디렉터리 주소: claude.ai/customize/connectors. Verified 표시는 보안 감사가 아니라는 점(공식 문서) 강조. 연결 후 대화창의 도구 메뉴에서 커넥터별 도구 목록과 권한(항상 허용/확인 후 실행)을 볼 수 있음. Claude Code에서는 /mcp로 연결된 서버와 도구 확인.')
+    L.table(d, 'MCP·커넥터를 찾을 수 있는 곳', ['어디서', '주소', '특징'], [
+        ['Claude 커넥터 디렉터리', 'claude.ai/customize/connectors', '공식. Claude 앱·Code·Cowork 공통 목록'],
+        ['공식 MCP Registry', 'registry.modelcontextprotocol.io', 'MCP 표준 공식 목록 (개발자용 정보)'],
+        ['MCP 공식 GitHub', 'github.com/modelcontextprotocol', '참고용 서버와 문서 모음'],
+        ['Claude Code', '/mcp 명령어', '연결된 서버와 도구 목록 확인'],
+        ['서비스 공식 문서', '예) Notion·Figma 도움말', '그 서비스가 MCP를 직접 제공하는지']],
+        [('우선', '공식 목록', '디렉터리에서 먼저 찾기'), ('확인', '권한', '읽기·쓰기 범위 보고 연결'), ('주의', '비공식', '출처 모르는 서버는 피하기')],
+        col_widths=[1.2, 1.5, 1.8], header=H, row_h=0.62,
+        notes='비공식 MCP 목록 사이트도 많지만, 출처가 불분명한 MCP 서버는 내 계정 권한으로 데이터를 읽고 쓸 수 있으니 주의. 회사 계정은 관리자(Owner)가 허용한 커넥터만 쓸 수 있음.')
+
     L.divider(d, '05', ['배운 걸 엮으면', '자동화가 됩니다'], ['프롬프트 + 지침 + 스킬 + MCP를', '조합한 실전 흐름입니다.'], header=H)
     L.table(d, 'Notion 견적 DB 설계', ['속성', '유형', '예시'], [
         ['클라이언트', '제목', '○○카페'],
