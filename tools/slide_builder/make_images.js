@@ -54,6 +54,7 @@ const tiles = {
   t_assets: ['images', C.O], t_sales: ['chart-column-increasing', C.Y], t_proto: ['monitor-smartphone', C.G], t_deck: ['presentation', C.K],
   // deck 4: motion use cases
   t_cloud: ['cloud', C.O], t_remote: ['smartphone', C.Y], t_sync: ['folder-sync', C.G], t_teleport: ['laptop', C.K],
+  t_goal: ['target', C.O], t_check: ['scan-eye', C.Y], t_plan: ['list-tree', C.G], t_repeat: ['repeat', C.K],
   t_logo: ['wand-sparkles', C.O], t_sns: ['smartphone', C.Y], t_reel: ['film', C.G], t_data: ['chart-line', C.K],
 };
 
@@ -80,6 +81,15 @@ const panels = {
     · 표 형식 + 고객 안내 문구 3줄 · <b style="color:${C.O}">정보가 부족하면 먼저 질문해줘</b></div>
     <div class="a">${AV}<div class="tx">확인할 점이 2가지 있어요. ① 응용 디자인 범위(명함·서식 외 포함?) ② 희망 납품일은 언제인가요?</div></div>`),
 
+  p_ask_before: windowHtml(PW, PH, '새 대화', `
+    <div class="u">우리 로고로 5초짜리 애니메이션 영상 만들어줘</div>
+    <div class="a">${AV}<div class="tx">로고 애니메이션을 만들어 봤어요. 미리보기에서 재생해 보세요.<br><span class="muted">(대화창 미리보기용 애니메이션 · MP4 파일 아님)</span></div></div>
+    <div style="margin-top:auto"><span class="tag" style="background:#ffe3dc;color:${C.O}">방법을 모른 채 바로 시작 → 원하던 결과와 다름</span></div>`),
+  p_ask_after: windowHtml(PW, PH, '새 대화', `
+    <div class="u" style="font-size:19px">우리 로고로 5초 MP4 영상을 만들고 싶어. <b>너 이런 작업 가능해?</b> 가능하면 어떤 방법이 좋고 뭐가 필요해?</div>
+    <div class="a">${AV}<div class="tx" style="font-size:18.5px;display:flex;flex-direction:column;gap:8px">
+      <span>대화창에서는 미리보기 애니메이션까지 가능해요. MP4 파일이 필요하면 <b>Claude Code + Remotion</b>을 추천해요.</span>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">${['로고 SVG', '브랜드 컬러', '길이·비율'].map(t => `<span class="chip" style="background:#eef7e9;color:#3f7d22">${icon('check', 18, '#3f7d22', 2.4)} ${t}</span>`).join('')}</div></div></div>`),
   p_calc_before: windowHtml(PW, PH, '견적 계산', `
     <div style="display:flex;gap:14px;flex-wrap:wrap">
       <span class="chip" style="background:${C.card}">${icon('calculator', 22, C.K)} 계산기</span>
