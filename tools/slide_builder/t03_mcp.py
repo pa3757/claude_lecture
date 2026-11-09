@@ -56,7 +56,7 @@ def build(d):
         ('작게 테스트', ['읽기 작업부터 해보고', '쓰기·발송은 확인 후'])], header=H,
         notes='주제 01의 "너 이런 작업 가능해?"를 커넥터에도 그대로 적용. 디렉터리 주소: claude.ai/customize/connectors. Verified 표시는 보안 감사가 아님(공식 문서). 연결 후 대화창 도구 메뉴에서 커넥터별 도구 목록과 권한 확인. Claude Code에서는 /mcp로 확인.')
     L.table(d, 'MCP·커넥터를 찾을 수 있는 곳', ['어디서', '주소', '특징'], [
-        ['Claude 커넥터 디렉터리', 'claude.ai/customize/connectors', '공식. Claude 앱·Code·Cowork 공통 목록'],
+        ['Claude 커넥터 디렉터리', 'claude.ai/customize/connectors', '공식. Claude 앱·Claude Code 공통 목록'],
         ['공식 MCP Registry', 'registry.modelcontextprotocol.io', 'MCP 표준 공식 목록 (개발자용 정보)'],
         ['MCP 공식 GitHub', 'github.com/modelcontextprotocol', '참고용 서버와 문서 모음'],
         ['Claude Code', '/mcp 명령어', '연결된 서버와 도구 목록 확인'],
