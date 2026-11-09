@@ -60,10 +60,11 @@ def build(d):
         ['공식 MCP Registry', 'registry.modelcontextprotocol.io', 'MCP 표준 공식 목록 (개발자용 정보)'],
         ['MCP 공식 GitHub', 'github.com/modelcontextprotocol', '참고용 서버와 문서 모음'],
         ['Claude Code', '/mcp 명령어', '연결된 서버와 도구 목록 확인'],
+        ['카카오 PlayMCP', 'playmcp.kakao.com', '카카오톡 나에게 보내기 등 국내 서비스'],
         ['서비스 공식 문서', '예) Notion·Figma 도움말', '그 서비스가 MCP를 직접 제공하는지']],
         [('우선', '공식 목록', '디렉터리에서 먼저 찾기'), ('확인', '권한', '읽기·쓰기 범위 보고 연결'), ('주의', '비공식', '출처 모르는 서버는 피하기')],
-        col_widths=[1.2, 1.5, 1.8], header=H, row_h=0.62,
-        notes='출처가 불분명한 MCP 서버는 내 계정 권한으로 데이터를 읽고 쓸 수 있으니 주의. 회사 계정은 관리자(Owner)가 허용한 커넥터만 쓸 수 있음.')
+        col_widths=[1.2, 1.5, 1.8], header=H, row_h=0.55,
+        notes='출처가 불분명한 MCP 서버는 내 계정 권한으로 데이터를 읽고 쓸 수 있으니 주의. 회사 계정은 관리자(Owner)가 허용한 커넥터만 쓸 수 있음. 카카오 PlayMCP 연결: PlayMCP에 카카오 로그인 → 도구함에 쓸 도구(예: 카카오톡 나와의 채팅) 담기 → Claude의 Customize > Connectors에서 커스텀 커넥터로 https://playmcp.kakao.com/mcp 추가 → 카카오 로그인·동의. 도구함이 비어 있으면 연결돼도 쓸 도구가 없음. 로그인 화면 주소가 kakao.com인지 확인.')
     L.text(d, '실습', '약 45분 · 가상 견적 요청 메일 3개를 사용합니다', [
         '**1**  커넥터 디렉터리에서 Notion, Gmail 찾아 소개와 도구 목록 읽어보기',
         '**2**  Notion, Gmail 연결 → "내 Notion에서 최근 수정된 페이지 알려줘"',

@@ -55,6 +55,7 @@ const tiles = {
   // deck 4: motion use cases
   t_cloud: ['cloud', C.O], t_remote: ['smartphone', C.Y], t_sync: ['folder-sync', C.G], t_teleport: ['laptop', C.K],
   t_goal: ['target', C.O], t_check: ['scan-eye', C.Y], t_plan: ['list-tree', C.G], t_repeat: ['repeat', C.K],
+  t_img2motion: ['image-play', C.K],
   t_logo: ['wand-sparkles', C.O], t_sns: ['smartphone', C.Y], t_reel: ['film', C.G], t_data: ['chart-line', C.K],
 };
 
