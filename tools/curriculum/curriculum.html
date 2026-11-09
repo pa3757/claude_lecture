@@ -13,24 +13,25 @@
   .bar { background: var(--f); height: 9mm; display: flex; align-items: center; padding: 0 5mm; gap: 2mm; position: relative; flex: none; }
   .dot { width: 2.8mm; height: 2.8mm; border-radius: 50%; }
   .pill { position: absolute; left: 50%; transform: translateX(-50%); background: #45484d; color: #ddd; font-size: 8.5pt; padding: 0.8mm 10mm; border-radius: 3mm; }
-  .body { padding: 9mm 10mm 7mm; flex: 1; display: flex; flex-direction: column; gap: 5mm; }
+  .body { padding: 11mm 10mm 9mm; flex: 1; display: flex; flex-direction: column; gap: 5mm; }
   .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm; }
   .eyebrow { color: var(--o); font-weight: 700; font-size: 10pt; letter-spacing: 0.3mm; }
-  h1 { font-size: 27pt; font-weight: 800; line-height: 1.2; margin-top: 1.5mm; }
+  h1 { font-size: 30pt; font-weight: 800; line-height: 1.2; margin-top: 1.5mm; }
   .sub { color: var(--muted); font-size: 10pt; margin-top: 1.5mm; }
   .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
   .fact { background: var(--k); color: #fff; border-radius: 3mm; padding: 3.5mm 4mm; }
   .fact b { display: block; font-size: 13pt; font-weight: 800; color: #fff; }
   .fact span { font-size: 8.5pt; color: #d6d6d8; }
-  .sec { font-size: 11pt; font-weight: 800; display: flex; align-items: center; gap: 2mm; }
+  .sec { font-size: 12.5pt; font-weight: 800; display: flex; align-items: center; gap: 2mm; }
   .sec::before { content: ''; width: 2.4mm; height: 2.4mm; border-radius: 50%; background: var(--o); }
-  table { width: 100%; border-collapse: separate; border-spacing: 0 1.6mm; margin-top: -1.6mm; }
-  th { font-size: 8.5pt; color: var(--muted); font-weight: 600; text-align: left; padding: 0 3mm; }
-  td { background: var(--card); padding: 3.6mm 3.5mm; font-size: 9.2pt; line-height: 1.45; vertical-align: middle; }
-  td:first-child { border-radius: 2.5mm 0 0 2.5mm; width: 47mm; white-space: nowrap; }
+  .tw { flex: 1; display: flex; }
+  table { width: 100%; height: 100%; border-collapse: separate; border-spacing: 0 2.4mm; margin-top: -2.4mm; }
+  th { font-size: 9.5pt; color: var(--muted); font-weight: 600; text-align: left; padding: 0 3mm; }
+  td { background: var(--card); padding: 4mm 4.5mm; font-size: 10.5pt; line-height: 1.45; vertical-align: middle; }
+  td:first-child { border-radius: 2.5mm 0 0 2.5mm; width: 50mm; white-space: nowrap; }
   td:last-child { border-radius: 0 2.5mm 2.5mm 0; width: 50mm; }
-  .num { display: inline-flex; width: 7mm; height: 7mm; border-radius: 50%; color: #fff; font-weight: 800; font-size: 9pt; align-items: center; justify-content: center; margin-right: 2mm; flex: none; }
-  .topic { display: flex; align-items: center; font-weight: 800; font-size: 10pt; }
+  .num { display: inline-flex; width: 8.5mm; height: 8.5mm; border-radius: 50%; color: #fff; font-weight: 800; font-size: 9pt; align-items: center; justify-content: center; margin-right: 2mm; flex: none; }
+  .topic { display: flex; align-items: center; font-weight: 800; font-size: 11.5pt; }
   .out { font-weight: 600; color: #333; }
   .tag { display: inline-block; font-size: 7.5pt; font-weight: 700; border-radius: 1.5mm; padding: 0.3mm 1.6mm; margin-left: 1mm; background: #ffe3dc; color: var(--o); vertical-align: 1px; }
   .bottom { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4mm; margin-top: auto; }
@@ -53,18 +54,11 @@
       <div>
         <div class="eyebrow">CURRICULUM</div>
         <h1>Claude 업무 자동화 클래스</h1>
-        <div class="sub">디자인 회사 대표님을 위한 1:2 과외 · 반복 업무는 Claude에게, 판단과 크리에이티브는 대표님께</div>
       </div>
     </div>
 
-    <div class="facts">
-      <div class="fact"><b>주 2회 · 회당 2시간</b><span>기한 없이 진도에 맞춰 진행</span></div>
-      <div class="fact"><b>개념 40 : 실습 60</b><span>설명 → 시연 → 따라하기 → 응용</span></div>
-      <div class="fact"><b>주제 7개</b><span>마지막에 우리 회사 자동화 1개 완성</span></div>
-    </div>
-
     <div class="sec">과정 구성</div>
-    <table>
+    <div class="tw"><table>
       <tr><th>주제</th><th>배우는 것</th><th>실습 결과물</th></tr>
       <tr><td><div class="topic"><span class="num" style="background:var(--o)">01</span>Claude 기초</div></td>
           <td>일반 대화 vs Claude Code · 요금제 · 프롬프트 4요소 · <b>"너 이런 작업 가능해?" 먼저 묻기</b> · <b>작업 분해</b></td>
@@ -87,31 +81,8 @@
       <tr><td><div class="topic"><span class="num" style="background:var(--g)">07</span>협업과 다음 단계</div></td>
           <td>Team 플랜으로 할 수 있는 것 · 도입 판단 체크리스트<span class="tag">설명만</span> · 더 알아두면 좋은 기능</td>
           <td class="out"><b style="color:var(--o)">최종 프로젝트</b> 우리 회사 업무 자동화 1개 시연</td></tr>
-    </table>
+    </table></div>
 
-    <div class="bottom">
-      <div class="box">
-        <h3>수업 한 번의 흐름 (약 2시간)</h3>
-        <div class="flow">
-          <div><b>복습</b><i>10분</i>과제 확인</div>
-          <div><b>개념·시연</b><i>40분</i>설명과 시연</div>
-          <div><b>휴식</b><i>10분</i>&nbsp;</div>
-          <div><b>실습</b><i>45분</i>직접 해보기</div>
-          <div><b>정리</b><i>15분</i>Q&amp;A·과제</div>
-        </div>
-      </div>
-      <div class="box">
-        <h3>준비물</h3>
-        <ul>
-          <li>Claude 유료 계정 (Pro 이상 권장)</li>
-          <li>노트북 (Claude 데스크톱 앱 · Claude Code 설치)</li>
-          <li>Notion, Gmail 계정</li>
-          <li>실습 자료는 가상 단가표·견적 양식·메일·로고로 제공</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="foot"><span>각 주제의 과제가 다음 주제의 재료가 되도록 이어집니다.</span><span>요금제·기능은 수업 시점의 공식 정보 기준으로 안내합니다.</span></div>
   </div>
 </div>
 </body>
