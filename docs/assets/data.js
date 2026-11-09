@@ -3,8 +3,8 @@ window.COURSE = {
   topics: [
     { id: 't01', no: '01', title: 'Claude 기초', slug: 'claude-basics', count: 21, color: 'o',
       desc: '일반 대화 vs Claude Code, 모델 고르기, 프롬프트 4요소, "너 이런 작업 가능해?" 먼저 묻기, 작업 분해' },
-    { id: 't02', no: '02', title: '프로젝트·지침·스킬', slug: 'instructions-skills', count: 23, color: 'y',
-      desc: '지침 3단계, 프로젝트, 메모리, 스킬 만들기·찾기·점검, 파일 만들기, Claude Design, 디자인 문서로 Figma 시안, 아티팩트' },
+    { id: 't02', no: '02', title: '프로젝트·지침·스킬', slug: 'instructions-skills', count: 27, color: 'y',
+      desc: '지침 3단계, 프로젝트, 메모리, Skill Creator, 스킬 설치 3가지 방법과 추천 스킬, Claude Design, 디자인 문서로 Figma 시안' },
     { id: 't03', no: '03', title: 'MCP와 커넥터', slug: 'mcp-connectors', count: 13, color: 'g',
       desc: 'MCP 개념과 동작, Notion·Gmail 커넥터, 앱 vs Claude Code, 새 MCP 찾고 알아보는 법' },
     { id: 't04', no: '04', title: '업무 자동화 실전', slug: 'automation', count: 11, color: 'k',
